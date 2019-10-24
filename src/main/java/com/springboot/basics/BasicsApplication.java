@@ -27,7 +27,7 @@ public class BasicsApplication {
 			@Value("${rhs}") int rhs,
 			@Value("${op}") char op) {
 		return args -> {
-			System.out.println(calculator.calculate(lhs, rhs, op));
+			calculator.calculate(lhs, rhs, op);
 		};
 	}
 
